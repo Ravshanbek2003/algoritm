@@ -157,19 +157,12 @@ class BST {
   // home work
   DFSPreOrder() {
     var data = [];
-    let node = this.root;
-    while (node) {
+    function traverse(node) {
       data.push(node.val);
-      if (node.left) {
-        node = node.left;
-      }
-      if (node.right) node = node.right;
+      node.left && traverse(node.left);
+      node.right && traverse(node.right);
     }
-    // function traverse(node) {
-    //   data.push(node.val);
-    //   node.left && traverse(node.left);
-    //   node.right && traverse(node.right);
-    // }
+    traverse(this.root);
     return data;
   }
   DFSPostOrder() {
