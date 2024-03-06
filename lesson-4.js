@@ -104,9 +104,7 @@ class List {
       next = current.next;
       current.next = prev;
       prev = current;
-      current = next;
-      console.log(next, "---next", prev, "--prev");
-      console.log("-------------------------------------------------");
+      current = next       
     }
 
     this.head = prev;
@@ -126,7 +124,7 @@ myList.Push(5);
 // myList.Dublicates();
 // myList.Print();
 // console.log(myList.FromTheEnd(2));
-myList.Reverse();
+// myList.Reverse();
 myList.Print();
 
 // uy ishi ({[]})-true       ({[}]) - false

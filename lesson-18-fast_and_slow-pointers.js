@@ -24,8 +24,6 @@ function isHappy(n) {
 }
 console.log(isHappy(19));
 
-
-
 class Node {
   constructor(data, next = null) {
     this.data = data;
@@ -64,7 +62,7 @@ class List {
   middleList() {
     let slow = this.head;
     let fast = this.head;
-    while (fast.next) {
+    while (fast?.next) {
       slow = slow.next;
       fast = fast?.next?.next;
     }
@@ -75,7 +73,6 @@ const myList = new List();
 myList.Push(32);
 myList.Push(78);
 myList.Push(65);
-myList.Push(12);
 myList.Push(45);
 myList.Push(47);
 myList.Push(94);

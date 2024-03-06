@@ -12,25 +12,25 @@
 // console.log(find(res, arr));
 
 // binary search
-// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// let res = 4;
-// function find(val, arr) {
-//   let right = arr.length - 1;
-//   let left = 0;
-//   while (left <= right) {
-//     let mid = Math.floor((right + left) / 2);
-//     if (arr[mid] === val) {
-//       return arr[mid];
-//     }
-//     if (arr[mid] < val) {
-//       left = mid + 1;
-//     }
-//     if (arr[mid] > val) {
-//       right = mid - 1;
-//     }
-//   }
-// }
-// console.log(find(res, arr));
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let res = 4;
+function find(val, arr) {
+  let right = arr.length - 1;
+  let left = 0;
+  while (left <= right) {
+    let mid = Math.floor((right + left) / 2);
+    if (arr[mid] === val) {
+      return arr[mid];
+    }
+    if (arr[mid] < val) {
+      left = mid + 1;
+    }
+    if (arr[mid] > val) {
+      right = mid - 1;
+    }
+  }
+}
+console.log(find(res, arr));
 
 // naive search
 let text = "lorelod loled lol lollol";
